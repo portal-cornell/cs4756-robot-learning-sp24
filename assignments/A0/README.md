@@ -10,3 +10,5 @@ Read the instructions carefully on the notebook. For your final submission, make
 - `q2.py`
 - `best_model_checkpoint.pth` (your model checkpoint)
 - `q2_test.png` (a plot of your model evaluated on the test data)
+
+All final submissions should be uploaded to Gradescope.
