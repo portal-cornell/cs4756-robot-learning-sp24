@@ -25,8 +25,6 @@ def create_loss_and_optimizer(model):
     Parameters:
         model (torch.nn.Module)
             A neural network
-        learning_rate (float)
-            Learning rate for the optimizer
     
     Returns:
         loss_fn (function)
