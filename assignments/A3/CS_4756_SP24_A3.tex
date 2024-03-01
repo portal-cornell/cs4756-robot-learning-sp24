@@ -58,7 +58,7 @@ where each $\tau$ is a rollout of length $T$ and $r(\tau) = \sum_{t = 0}^{T-1} r
 The gradient can further be refined by noting that future actions do not affect past rewards, resulting in the following ``reward-to-go" formulation:
 
 \begin{equation}\label{eq:5}
-    \nabla_\theta J(\theta) &=  \E_{\tau\sim\pi_\theta(\tau)}\left[\sum_{t = 0}^T\left(\nabla_\theta \log \pi_\theta(a_t | s_t) \cdot \sum_{t' = t}^Tr(s_{t'}, a_{t'})\right)\right]
+    \nabla_\theta J(\theta) &=  \E_{\tau\sim\pi_\theta(\tau)}\left[\sum_{t = 0}^{T-1}\left(\nabla_\theta \log \pi_\theta(a_t | s_t) \cdot \sum_{t' = t}^{T-1}r(s_{t'}, a_{t'})\right)\right]
 \end{equation}
 }%
 }
